@@ -1,11 +1,14 @@
 # RFID-ESP32-NOW-Control-Buttons
 
-This repository contains the code and diagram wiring of my ESP-NOW control buttons project. Sender has to be unlocked with a keychain and has four buttons on an LCD screen that have an "ON" and "OFF" state. When pressed, these buttons send signals to the ESP32 receivers to change a state. Receiver One controls an LED while Receiver Two controls an LED and a DC motor.
+This repository contains the code (Arduino IDE) and diagram wiring of my ESP-NOW control buttons project. Sender has to be unlocked with a keychain and has four buttons on an LCD screen that have an "ON" and "OFF" state. When pressed, these buttons send signals to the ESP32 receivers to change a state. Receiver One controls an LED while Receiver Two controls an LED and a DC motor.
 
 [Video demonstration](https://www.youtube.com/watch?v=hILfgU4563I)
 
-Why ESP-NOW over Bluetooth or Wifi?  
-ESP-NOW has the range of Wifi, but uses the ESP32 microcontrollers as stations, so does not require a dedicated router. It has low latency and power usage.
+Why ESP-NOW over Bluetooth or Wifi? ESP-NOW has the range of Wifi, but uses the ESP32 microcontrollers as stations, so does not require a dedicated router. It has low latency and power usage.
+
+External libraries needed:  
+TFT_eSPI  
+MFRC522v2
 
 # Sender
 <img width="1500" height="1259" alt="sender_circuit" src="https://github.com/user-attachments/assets/7b585fdc-8325-4914-8a53-693b6403049e" />
